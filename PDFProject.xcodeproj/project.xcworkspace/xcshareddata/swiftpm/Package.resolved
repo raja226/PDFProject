@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "grmustache.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/groue/GRMustache.swift",
+      "state" : {
+        "revision" : "edbe65da33671ca1e93e0751cbbeffc893b48da8",
+        "version" : "4.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

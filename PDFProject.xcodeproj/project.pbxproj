@@ -13,6 +13,7 @@
 		BED1DE9D2BD39979007FAED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED1DE9B2BD39979007FAED1 /* Main.storyboard */; };
 		BED1DE9F2BD3997A007FAED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED1DE9E2BD3997A007FAED1 /* Assets.xcassets */; };
 		BED1DEA22BD3997A007FAED1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED1DEA02BD3997A007FAED1 /* LaunchScreen.storyboard */; };
+		BED1DEAE2BD3A270007FAED1 /* Mustache in Frameworks */ = {isa = PBXBuildFile; productRef = BED1DEAD2BD3A270007FAED1 /* Mustache */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED1DEAE2BD3A270007FAED1 /* Mustache in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PDFProject;
+			packageProductDependencies = (
+				BED1DEAD2BD3A270007FAED1 /* Mustache */,
+			);
 			productName = PDFProject;
 			productReference = BED1DE922BD39979007FAED1 /* PDFProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BED1DE892BD39979007FAED1;
+			packageReferences = (
+				BED1DEAC2BD3A270007FAED1 /* XCRemoteSwiftPackageReference "GRMustache" */,
+			);
 			productRefGroup = BED1DE932BD39979007FAED1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BED1DEAC2BD3A270007FAED1 /* XCRemoteSwiftPackageReference "GRMustache" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRMustache.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BED1DEAD2BD3A270007FAED1 /* Mustache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BED1DEAC2BD3A270007FAED1 /* XCRemoteSwiftPackageReference "GRMustache" */;
+			productName = Mustache;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BED1DE8A2BD39979007FAED1 /* Project object */;
 }
